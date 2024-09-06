@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028274326990",
+    "project_id": "alumni-job-b68ff",
+    "storage_bucket": "alumni-job-b68ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028274326990:android:fb42c81d7ea3fe502d2f9f",
+        "android_client_info": {
+          "package_name": "com.example.jobizzy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB89gZeyBMtMCB7tuVLtj8Ah7_WuiNaAs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
