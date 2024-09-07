@@ -1,33 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/blue"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="40dp"
     tools:context=".MainActivity">
 
- <TextView
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:textStyle="bold"
-     android:textSize="25dp"
-     android:textColor="@color/white"
-     android:text="Welcome Back"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:text="Welcome Back" />
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Log in!"
-       android:textColor="@color/white"
-       android:textSize="50dp"
-       android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in!"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Email Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/white"
+        app:boxBackgroundColor="@color/white"
+    app:boxBackgroundMode="outline">
 
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Field -->
+<com.google.android.material.textfield.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+android:padding="10dp"
+    android:textColorHint="@color/black"
+    app:boxStrokeColor="@color/white"
+    app:boxBackgroundColor="@color/white"
+    app:boxBackgroundMode="outline">
+
+<com.google.android.material.textfield.TextInputEditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Password"
+android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
 
-
-</LinearLayout>
